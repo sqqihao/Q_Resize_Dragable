@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>拖拽_拖拉缩放效果_组件</title>
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+<script src="js/QDragResize.js"></script>
+</head>
+<style>
+*{
+	margin:0;
+	padding:0;
+}
+</style>
+<body>
+<div>
+	<div>sdfsdf</div>
+	<div>1111</div>
+	<p id="div1">text</p>
+</div>
+<br>
+<br>
+<div id="div2">div2</div>
+<br>
+<br>
+<div>
+    <div id="div3">div3</div>
+</div>
+    
+<script>
+
+
+window.onload = function() {
+	
+	$("#div1").DragReize({ minWidth : 200 , minHeight : 200, clientScreen : false});
+	$("#div2").DragReize({ minWidth : 200 , minHeight : 200, clientScreen : true});
+	$("#div3").DragReize({ minWidth : 200 , minHeight : 200, clientScreen : false ,
+		range : { top : 100 ,left: 200, x : 500 , y : 600}
+	});
+	
+
+	//$(DIV).Qresize( { minWidth : 200 , minHeight : 200}  );
+	//$(DIV).Drag( {range : { top : 100 ,left: 200, x : 500 , y : 600}} );
+	//$(DIV).Drag( {clientScreen : false } );
+};
+</script>
+</body>
+</html>

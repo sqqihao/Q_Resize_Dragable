@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+
+.drag{
+	position:absolute;
+	border:1px solid #000;
+}
+.drag .dragresize{
+	position:absolute;
+	width:8px;
+	height:8px;
+	background:#000;
+}
+.drag .dragresize-tl{
+	left:-4px;
+	top:-4px;
+}
+.drag .dragresize-tm{
+	margin-left:-4px;
+	left:50%;
+	top:-4px;
+}
+.drag .dragresize-tr{
+	top:-4px;
+	right:-4px;
+}
+.drag .dragresize-ml{
+	left:-4px;
+	top:50%;
+	margin-top:-4px;
+}
+.drag .dragresize-mr{
+	right:-4px;
+	top:50%;
+	margin-top:-4px;
+}
+.drag .dragresize-bl{
+	left:-4px;
+	bottom:-4px;
+}
+.drag .dragresize-bm{
+	bottom:-4px;
+	left:50%;
+	margin-left:-4px;
+}
+.drag .dragresize-br{
+	bottom:-4px;
+	right:-4px;
+}
